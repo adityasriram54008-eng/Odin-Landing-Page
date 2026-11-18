@@ -2,6 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    display :flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 header, .hero-section, footer {
     background-color: #1F2937;
 }
@@ -17,14 +23,22 @@ header, .hero-section, footer {
     font-weight: 900;
 }
 
-a,#secondary-main-text, footer {
+a,#secondary-main-text, footer, #ac-text, button {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
+ul {
+    list-style-type: none;
+}
+
 button, .action {
     background-color: #3882F6;
+}
+
+button {
+    border-radius: 5px;
 }
 
 #rand {
@@ -33,10 +47,91 @@ button, .action {
     font-weight: 900;
 }
 
-#quote {
+
+.hero-second{
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+}
+
+header > ul {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    margin: 10px;
+    gap: 20px;
+}
+
+.hero-section{
+    display: flex;
+    height:500px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero-img > img{
+    width:300px;
+}
+
+#text{
+    text-align: left;
+    width: 500px;
+}
+
+.imgs{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.imgs > figure > img{
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+
+.quote {
+    display: flex;
+    height: 500px;
     background-color: #E5E7EB;
-    font-size: 36px;
+    font-size: 28px;
     color: #1F2937;
     font-weight: 300;
+    flex-direction: column;
     font-style: italic;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote{
+    width: 600px;
+}
+
+
+.action{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    border-radius: 10px;
+}
+
+#ac-text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#ac-but{
+    height: 30px;
+    align-self: center;
 }
